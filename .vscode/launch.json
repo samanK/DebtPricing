@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch DebtPricing.Api",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/DebtPricing.API/bin/Debug/net8.0/DebtPricing.Api.dll",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "DOTNET_ROOT": "/opt/homebrew/opt/dotnet@8/libexec",
+                "DOTNET_ROOT_ARM64": "/opt/homebrew/opt/dotnet@8/libexec",
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "DOTNET_ENVIRONMENT": "Development"
+            }
+        }
+    ]
+}

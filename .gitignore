@@ -1,0 +1,17 @@
+# .NET build output
+**/bin/
+**/obj/
+.vs/
+*.user
+
+# Node / Next.js
+**/node_modules/
+**/.next/
+
+# Local secrets and environment files
+**/.env
+**/.env.local
+**/.env*.local
+
+# macOS
+.DS_Store

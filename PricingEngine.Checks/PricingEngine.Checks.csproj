@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../DebtPricing.Api/Domain/*.cs" />
+    <Compile Include="../DebtPricing.Api/Dtos/*.cs" />
+    <Compile Include="../DebtPricing.Api/Services/*.cs" />
+    <!-- Security code that needs no NuGet packages (JwtBearer/Swagger wiring in KeycloakExtensions.cs is not included) -->
+    <Compile Include="../DebtPricing.Api/Security/Roles.cs" />
+    <Compile Include="../DebtPricing.Api/Security/KeycloakOptions.cs" />
+    <Compile Include="../DebtPricing.Api/Security/KeycloakRoleMapper.cs" />
+    <Compile Include="../DebtPricing.Api/Security/AuthorizationSetup.cs" />
+  </ItemGroup>
+</Project>
